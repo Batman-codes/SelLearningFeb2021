@@ -1,0 +1,17 @@
+// Check number of occurrences of a char (eg 'e') in a String
+
+package week1Assignment;
+
+public class CharOccurance {
+
+	public static void main(String[] args) {
+		
+		String str = "welcome to chennai";
+		
+		System.out.println(str.charAt(":"+8+":"));
+		
+
+
+	}
+
+}

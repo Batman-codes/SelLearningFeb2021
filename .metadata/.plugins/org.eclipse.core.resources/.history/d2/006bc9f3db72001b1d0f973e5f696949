@@ -1,0 +1,33 @@
+package week1Assignment;
+
+import java.util.Scanner;
+
+public class removeDuplicate {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Please enter your string");
+		
+		String input = sc.next();
+		
+		char[] inputArray = input.toCharArray();
+		
+		for(int i = 0 ; i <= input.length()-1 ; i++){
+			
+			for(int j = i+1 ; j <= inputArray.length-1 ; j++){
+				
+				if(input.charAt(i)== inputArray[j]){
+					input.replace(inputArray[j], ' ');
+					
+					System.out.println(input);
+				}
+			}
+			
+		}
+		System.out.println(input);
+
+	}
+
+}

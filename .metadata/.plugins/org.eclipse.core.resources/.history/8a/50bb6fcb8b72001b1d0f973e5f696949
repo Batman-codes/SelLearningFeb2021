@@ -1,0 +1,37 @@
+package week1Assignment;
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+
+	public static void main(String[] args) {
+		
+		int range;
+		int firstNum = 0;
+		int secondNum = 1;
+		int sum;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Please enter the range");
+		
+		range = sc.nextInt();
+		
+		System.out.print(firstNum);
+		
+		for(int i = 1; i<=range ; i++){
+			
+			sum = firstNum + secondNum;
+			
+			firstNum = secondNum;
+			
+			secondNum = sum;
+			
+			System.out.print(sum);
+		}
+		
+		sc.close();
+
+	}
+
+}

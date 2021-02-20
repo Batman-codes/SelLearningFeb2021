@@ -1,0 +1,44 @@
+package week1Assignment;
+
+import java.util.Scanner;
+
+public class removeDuplicate {
+
+	public static void main(String[] args) {
+		
+		int count = 0;
+		
+		String replaceDuplicates = null;
+		
+		//Scanner sc = new Scanner(System.in);
+		
+		//System.out.println("Please enter your string");
+		
+		//String input = sc.next();
+		
+		String input = "We learn java basics as part of java sessions in java week1";
+		
+		System.out.println("Beofore replacing duplicate:");
+		
+		System.out.println(input);
+		
+		String[] inputSplit = input.split(" ");
+		
+		StringBuilder sbTemp = new StringBuilder();
+					
+			for(String s : inputSplit){
+				
+				if(count>0){
+				
+					sbTemp.append(" ");
+				
+				}
+				sbTemp.append(s);
+				count++;
+				}
+		}
+			
+
+
+
+}

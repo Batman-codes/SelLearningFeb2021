@@ -1,0 +1,36 @@
+package week1Assignment;
+
+import java.util.Scanner;
+
+public class Pelindrome {
+
+	public static void main(String[] args) {
+		
+		
+		int firstIndex = 0;
+		int lastIndex = 0;
+		boolean isPalindrome = true;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the string you want ot check: ");
+		
+		String input = sc.next();
+		
+		lastIndex = input.length()-1;
+		
+		while (firstIndex < lastIndex){
+		
+		if(input.charAt(firstIndex) != input.charAt(lastIndex))
+			isPalindrome = false;
+		
+		}
+		
+		if (isPalindrome == true)
+			System.out.println(input + " is a palindrome");
+		else
+			System.out.println(input + " is not palindrome");
+		sc.close();
+		
+	}
+
+}

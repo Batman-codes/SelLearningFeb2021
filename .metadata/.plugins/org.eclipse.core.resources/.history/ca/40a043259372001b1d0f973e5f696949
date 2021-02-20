@@ -1,0 +1,33 @@
+package week1Assignment;
+import java.util.ArrayList;
+public class FindIntersection {
+
+	public static void main(String[] args) {
+		/*
+		* a) Declare An array for {3,2,11,4,6,7};	 
+		 * b) Declare another array for {1,2,8,4,9,7};
+		 * c) Declare for loop iterator from 0 to array length
+		 * d) Declare a nested for another array from 0 to array length
+		 * e) Compare Both the arrays using a condition statement
+	*/
+		
+		int[] array1 = {3,2,11,4,6,7};
+		int[] array2 = {1,2,8,4,9,7};
+		ArrayList<Integer> intersection = new ArrayList<Integer>();
+		
+		for(int i = 0 ; i<= array1.length-1 ; i++){
+			
+			for(int j = 0 ; j<= array2.length-1 ; j++){
+				
+				if(array1[i]!=array2[j]){
+					
+					intersection.add(array1[i]);
+				
+				}
+			}
+		}
+		
+		System.out.println(intersection);
+	}
+
+}

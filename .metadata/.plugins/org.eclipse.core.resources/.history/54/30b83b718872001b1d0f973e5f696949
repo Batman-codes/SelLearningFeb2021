@@ -1,0 +1,24 @@
+package week1Assignment;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		
+		int factorail = 1;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Please enter a number to check factorial");
+		
+		int number = sc.nextInt();
+		
+		for(int i = 1; i<= number ; i++){
+			
+			factorail = i * factorail;
+		}
+		
+		sc.close();
+	}
+	
+}

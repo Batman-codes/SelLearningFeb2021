@@ -1,0 +1,24 @@
+package week1Assignment;
+
+public class SumOfDigitsFromString {
+
+	public static void main(String[] args) {
+		
+		String text = "Tes12Le79af65";
+		
+		int sum = 0;
+		
+		char[] textChar = text.toCharArray();
+		
+		for(int i = 0 ; i<= textChar.length-1 ; i++){
+			
+			if(Character.isDigit(textChar[i])){
+				
+				sum = sum + Character.getNumericValue(textChar[i]);
+			}
+				
+		}
+
+	}
+
+}

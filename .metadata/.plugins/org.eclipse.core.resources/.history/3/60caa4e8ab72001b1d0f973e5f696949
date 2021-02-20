@@ -1,0 +1,18 @@
+package week1Assignment;
+
+public class Pelindrome {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Take an String input from user
+		 * use string method to reverse the string and save it as new string
+		 * use string method to compare both strings
+		 * if both strings match print that string is palindrome
+		 */
+		
+		
+		
+	}
+
+}

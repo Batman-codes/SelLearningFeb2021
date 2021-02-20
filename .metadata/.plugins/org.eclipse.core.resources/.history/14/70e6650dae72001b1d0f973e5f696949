@@ -1,0 +1,34 @@
+package week1Assignment;
+
+import java.util.Scanner;
+
+public class Pelindrome {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Take an String input from user
+		 * use for loop to reverse the string and save it as new string
+		 * use string method to compare both strings
+		 * if both strings match print that string is palindrome
+		 */
+		
+		Scanner sc = new Scanner(System.in);
+		String reverse;
+		int size;
+		
+		System.out.println("Enter the string you want ot check: ");
+		
+		String input = sc.next();
+		
+		size = input.length()-1;
+		
+		for(int i = 0; i<= input.length()-1 ; i++){
+			
+		reverse.charAt(size) = input.charAt(i);
+			
+		}
+		
+	}
+
+}
